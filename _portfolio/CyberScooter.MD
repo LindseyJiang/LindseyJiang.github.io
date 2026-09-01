@@ -18,6 +18,14 @@ gallery:
 
 This design project used modern techniques of filament 3D printing and microcontroller programming to design a functional syringe pump. The project supports 20 mL and 10 mL syringes. Two syringe pump diameters were used to calculate maximum flow rates. A 14.3 mm diameter syringe’s maximum flow rate is 12.044 mL/min. A 19.2 mm diameter syringe would have a maximum flow rate of 21.713 mL/min. 
 
+## 
+| Name          | Quantity      | 
+| ------------- |:-------------:| 
+| Computer with USB port | 1 | 
+| Arduino     | 1 |   
+| Stepper motor | 1 |    
+
+
 ## Operating Instructions: 
 1.	Work on a clean, flat surface away from liquids.
 2.	Fill the appropriately sized syringe with the desired amount of liquid
