@@ -39,12 +39,13 @@ This design project used modern techniques of filament 3D printing and microcont
 
 Syringe Specifications:
 * Plunger base diameters: 12 mm - 20.75 mm 
-*	Flange diameters: 17 mm – 38.5 mm
+*	Flange diameters: 17 mm - 38.5 mm
 *	End of plunger diameter: < 17 mm 
 *	Barrel diameter: 21.50 mm 
 
 
 #### 3D printed parts 
+
 | Name          | Quantity      | 
 | ------------- |:-------------:| 
 | Component housing box and lid | 1 |
