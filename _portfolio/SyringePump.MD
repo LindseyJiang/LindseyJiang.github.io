@@ -72,4 +72,4 @@ Syringe Specifications:
 14.	When finished, unplug all cables and store the device in a safe, dry location.
 
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="This is a gallery to go along with the project. It includes a rendering of the CAD model and the wiring diagram." %}
