@@ -50,7 +50,7 @@ Syringe Specifications:
 | Motor mounting plate | 1 |
 | Carriage | 1 |
 
-## Click [here](/_pages/SyringePumpCode.txt)for Arduino code 
+## Click [here](/_pages/SyringePumpCode.txt) for Arduino code 
 
 ## CAD Model 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811b450b96097101e87?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
@@ -72,4 +72,4 @@ Syringe Specifications:
 14.	When finished, unplug all cables and store the device in a safe, dry location.
 
 
-{% include gallery caption="This is a gallery to go along with the project. It includes a rendering of the CAD model and the wiring diagram." %}
+{% include gallery caption="Rendering of the CAD model and the wiring diagram." %}
