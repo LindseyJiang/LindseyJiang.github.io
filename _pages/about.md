@@ -10,6 +10,7 @@ Lindsey Jiang has worked on various projects during her undergraduate studies, f
   * BE Mechanical Engineering
   * Minor Computer Science
   * Minor Digital Fabrication
+
 Expected Graduation: May 2027
  
 ## Work Experience 
