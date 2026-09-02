@@ -1,0 +1,80 @@
+// Syringe Pump Project Code - Machine Maestros
+
+#include <AccelStepper.h>
+
+#define PI 3.14159265359
+#define STEP 2
+#define DIR 3
+#define BUTTON_PIN 4
+#define LIMIT_PIN 5
+#define LED_R 8
+#define LED_G 9
+#define LED_B 10
+
+
+// Parameters
+
+// //20mL
+float flowRate = 5.0; // mL/min
+float syringeDiameter = 18.5; // mm
+
+// 10mL
+//float flowRate = 5.0; // mL/min
+//float syringeDiameter = 14.3; // mm
+
+float leadScrewPitch = 8.0; // mm/rev
+float stepsPerRevolution = 1600.0; // steps/rev
+bool pumpRunning = false;
+
+AccelStepper stepper(AccelStepper::DRIVER, STEP, DIR); // Identifies step and dir pins for motor
+
+void setup(){
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(LIMIT_PIN, INPUT_PULLUP);
+  pinMode(LED_R, OUTPUT);
+  pinMode(LED_G, OUTPUT);
+  pinMode(LED_B, OUTPUT);
+ 
+  stepper.setMaxSpeed(1000);
+  float stepSpeed = calculateStepsPerSecond(flowRate, syringeDiameter);
+  stepper.setSpeed(-stepSpeed); // Negative to send carriage in correct direction
+}
+
+
+void loop()
+{  
+  pumpRunning = digitalRead(BUTTON_PIN) == LOW; // Change LEDs and start motor depending on Limit Switch and Button
+  if (digitalRead(LIMIT_PIN) == HIGH){
+    pumpRunning = false;
+    updateLEDs();
+  } else if (pumpRunning){
+    stepper.runSpeed();
+    updateLEDs();
+  } else{
+    updateLEDs();
+  }
+}
+
+// Convert flow rate and syringe diameter to steps/sec
+float calculateStepsPerSecond(float flowRate, float syringeDiameter) {
+  float volumetricRate = flowRate * (1000.0/60.0); // convert to mm^3/sec
+  float syringeArea = PI * pow(syringeDiameter / 2.0, 2); // calculate syringe area
+  float linearSpeed = volumetricRate / syringeArea; // convert to mm/sec
+  float stepsPerSecond = (linearSpeed / leadScrewPitch) * stepsPerRevolution; // convert to steps/sec
+  return stepsPerSecond;
+}
+
+void updateLEDs() {
+  if (pumpRunning){
+    digitalWrite(LED_G, HIGH); // Green when running
+    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_R, LOW);
+  } else if (digitalRead(LIMIT_PIN)==HIGH) {
+    digitalWrite(LED_G, LOW);
+    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_R, HIGH); // Red when limit reached
+  } else {
+    digitalWrite(LED_G, HIGH);
+    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_R, HIGH); // Yellow when paused
+  }
