@@ -2,8 +2,8 @@
 title: "Syringe Pump"
 excerpt: "This design project used modern techniques of filament 3D printing and microcontroller programming to design a functional syringe pump."
 header:
-  image: assets/img/syringepumpreallifeassembly.gif
-  teaser: assets/img/syringepumpreallifeassembly.gif
+  image: /assets/img/syringepumpreallifeassembly.gif
+  teaser: /assets/img/syringepumpreallifeassembly.gif
 gallery:
   - url: /assets/img/Cyber-Scooter-1.jpg
     image_path: assets/img/Cyber-Scooter-1.jpg
@@ -53,7 +53,7 @@ Syringe Specifications:
 | Motor mounting plate | 1 |
 | Carriage | 1 |
 
-## [Arduino Code](assets/SyringePumpCode)
+## [Arduino Code](/assets/SyringePumpCode)
 
 ## CAD Model 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811b450b96097101e87?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
