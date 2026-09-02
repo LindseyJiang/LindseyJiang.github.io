@@ -53,7 +53,7 @@ Syringe Specifications:
 | Motor mounting plate | 1 |
 | Carriage | 1 |
 
-## Arduino Code 
+## [Arduino Code](assets/SyringePumpCode)
 
 ## CAD Model 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811b450b96097101e87?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
