@@ -8,12 +8,13 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Dr. David Florian is an engineer with a passion for teaching and the open-source community. His area of expertise is 3D printing, with an emphasis on large format pellet extrusion and selective laser sintering."
+excerpt: "Lindsey is a mechanical engineering student at Vanderbilt University. She has work experience in the quantum computing, manufacturing, and biopharmaceutical industries. Lindsey is currently searching for a job in pharmaceutical engineering."
+
 feature_row:
-  - image_path: assets/img/CNC-Mill-Thumbnail.jpg
-    alt: "CNC Mill"
-    title: "Custom CNC Milling Machine"
-    excerpt: "Built for fabricating aluminum and steel parts."
+  - image_path: assets/img/grouppic1.jpg
+    alt: "Artillery Ammo Resupply Platform"
+    title: "Artillery Ammo Resupply Pallet-Based Platform"
+    excerpt: "Built for easier transportation and less signature in battle."
   - image_path: assets/img/Plasma-Cutter-Banner.jpg
     alt: "placeholder image 2"
     title: "DIY Plasma Cutter"
