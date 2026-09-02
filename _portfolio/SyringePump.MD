@@ -2,8 +2,8 @@
 title: "Syringe Pump"
 excerpt: "This design project used modern techniques of filament 3D printing and microcontroller programming to design a functional syringe pump."
 header:
-  image: /assets/img/Cyber-Scooter-Banner.jpg
-  teaser: /assets/img/Cyber-Scooter-TH.jpg
+  image: assets/img/syringepumpreallifeassembly.gif
+  teaser: assets/img/syringepumpreallifeassembly.gif
 gallery:
   - url: /assets/img/Cyber-Scooter-1.jpg
     image_path: assets/img/Cyber-Scooter-1.jpg
