@@ -5,15 +5,12 @@ header:
   image: /assets/img/syringepumpreallifeassembly.gif
   teaser: /assets/img/syringepumpreallifeassembly.gif
 gallery:
-  - url: /assets/img/Cyber-Scooter-1.jpg
-    image_path: assets/img/Cyber-Scooter-1.jpg
+  - url: /assets/img/syringepumpcadmodel.jpg
+    image_path: assets/img/syringepumpcadmodel.jpg
     alt: "placeholder image 1"
-  - url: /assets/img/Cyber-Scooter-2.jpg
-    image_path: assets/img/Cyber-Scooter-2.jpg
+  - url: /assets/img/syringepumpwiringdiagram.png
+    image_path: assets/img/syringepumpwiringdiagram.png
     alt: "placeholder image 2"
-  - url: /assets/img/Cyber-Scooter-3.jpg
-    image_path: assets/img/Cyber-Scooter-3.jpg
-    alt: "placeholder image 3"
 ---
 
 This design project used modern techniques of filament 3D printing and microcontroller programming to design a functional syringe pump. The project supports 20 mL and 10 mL syringes. Two syringe pump diameters were used to calculate maximum flow rates. A 14.3 mm diameter syringe’s maximum flow rate is 12.044 mL/min. A 19.2 mm diameter syringe would have a maximum flow rate of 21.713 mL/min. 
