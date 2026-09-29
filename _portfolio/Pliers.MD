@@ -1,6 +1,8 @@
 ---
 title: "Multimaterial Pliers"
-excerpt: "This design project used modern techniques of filament 3D printing and microcontroller programming to design a functional syringe pump."
+excerpt: "The goal of this project was to design and print needle nose pliers capable of gripping and picking up through-hole resistors. The model is multi-material printed using two different filaments: PLA and TPU (90A). The TPU part functions as a “spring” to push the PLA parts apart from each other in resting position. Compression force is used to bring the plier’s jaws together. 
+The model was originally designed to be print-in-place, meaning that they should not require any assembly post-print. With the elimination of screws, pins, fasteners, adhesives, and other assembly hardware, print-in-place models save a significant amount of time. Chains, which are usually linked one by one, can be printed quickly all at once (example [here](https://www.thingiverse.com/thing:2916907)). Another example would be a ball joint (example [here](https://www.thingiverse.com/thing:454814) which would otherwise be much more difficult to assemble."
+
 header:
   image: /assets/img/syringepumpreallifeassembly.gif
   teaser: /assets/img/syringepumpreallifeassembly.gif
