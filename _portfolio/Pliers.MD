@@ -1,37 +1,9 @@
 ---
 title: "Multimaterial Pliers"
-excerpt: "Parallel-action needle nose pliers capable of gripping and picking up through-hole resistors. The model is multi-material printed using two different filaments: PLA and TPU (90A)."
-
+excerpt: "Multi-material parallel-action needle nose pliers capable of gripping and picking up through-hole resistors."
 header:
   image: /assets/img/picking_up_resistor.gif
   teaser: /assets/img/plier.png
-
-gallery1:
-  - url: /assets/img/spring_1.jpeg
-    image_path: /assets/img/spring_1.jpeg
-    alt: "Image 1"
-
-  - url: /assets/img/spring_2.jpeg
-    image_path: /assets/img/spring_2.jpeg
-    alt: "Image 2"
-
-  - url: /assets/img/spring_3.jpeg
-    image_path: /assets/img/spring_3.jpeg
-    alt: "Image 3"
-
-gallery2:
-  - url: /assets/img/demo_back.gif
-    image_path: /assets/img/demo_back.gif
-    alt: "Image 4"
-
-  - url: /assets/img/demo_front.gif
-    image_path: /assets/img/demo_front.gif
-    alt: "Image 5"
-
-  - url: /assets/img/demo_side.gif
-    image_path: /assets/img/demo_side.gif
-    alt: "Image 6"
-
 
 ---
 
@@ -61,8 +33,11 @@ I then decided to use a design that was wider than it was tall, which worked muc
 
 After the second iteration, I quickly realized that the component was not tall enough to push the jaws away from each other. I then made the ovals taller and wider, which pushed the jaws apart better. 
 
-{% include gallery id="gallery1" layout="third" %}
-**First, second, and third iterations of spring component (left to right)**
+<div style="display: flex; gap: 10px;">
+  <img src="/assets/img/spring_1.jpeg" alt="First spring iteration" style="width: 33%;">
+  <img src="/assets/img/spring_2.jpeg" alt="Second spring iteration" style="width: 33%;">
+  <img src="/assets/img/spring_3.jpeg" alt="Third spring iteration" style="width: 33%;">
+</div>
 
 ## Specifications 
 #### Jaw measurements 
@@ -81,6 +56,8 @@ The jaw is approximately 15 mm long, and can open up to 6.5 mm. The entire plier
 ## CAD Model 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811705aeb8185a93df8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
-
-{% include gallery id="gallery2" layout="third" %}
-**Demonstration of plier from different angles" 
+<div style="display: flex; gap: 10px;">
+  <img src="/assets/img/demo_back.gif" alt="Plier from back" style="width: 33%;">
+  <img src="/assets/img/demo_front.gif" alt="Plier from front" style="width: 33%;">
+  <img src="/assets/img/demo_side.gif" alt="Plier from side" style="width: 33%;">
+</div>
