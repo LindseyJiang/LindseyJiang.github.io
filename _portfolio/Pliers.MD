@@ -43,9 +43,9 @@ After the second iteration, I quickly realized that the component was not tall e
 #### Jaw measurements 
 The jaw is approximately 15 mm long, and can open up to 6.5 mm. The entire plier is roughly 130 mm long when resting. 
 
-#### Print Settings
-| Setting          | PLA      |TPU      | 
-| ------------- |:-------------:|:-------------:|
+
+| Setting | PLA | TPU |
+| ------------- | ------------- | ------------- |
 | Print width (mm) | 0.4 | 0.6 |
 | Bed temperature (°C) | 65 | 60 |
 | Print temperature (°C) | 215 | 240 |
