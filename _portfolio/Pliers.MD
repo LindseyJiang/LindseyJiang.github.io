@@ -7,7 +7,7 @@ header:
   teaser: /assets/img/plier.png
 
 gallery1:
-   - url: /assets/img/spring_1.jpeg
+  - url: /assets/img/spring_1.jpeg
     image_path: /assets/img/spring_1.jpeg
     alt: "Image 1"
 
@@ -19,9 +19,9 @@ gallery1:
     image_path: /assets/img/spring_3.jpeg
     alt: "Image 3"
 
-gallery2: 
+gallery2:
   - url: /assets/img/demo_back.gif
-    image_path: /assets/demo_back.gif
+    image_path: /assets/img/demo_back.gif
     alt: "Image 4"
 
   - url: /assets/img/demo_front.gif
