@@ -1,11 +1,10 @@
 ---
 title: "Multimaterial Pliers"
-excerpt: "The goal of this project was to design and print needle nose pliers capable of gripping and picking up through-hole resistors. The model is multi-material printed using two different filaments: PLA and TPU (90A). The TPU part functions as a “spring” to push the PLA parts apart from each other in resting position. Compression force is used to bring the plier’s jaws together. 
-The model was originally designed to be print-in-place, meaning that they should not require any assembly post-print. With the elimination of screws, pins, fasteners, adhesives, and other assembly hardware, print-in-place models save a significant amount of time. Chains, which are usually linked one by one, can be printed quickly all at once (example [here](https://www.thingiverse.com/thing:2916907)). Another example would be a ball joint (example [here](https://www.thingiverse.com/thing:454814) which would otherwise be much more difficult to assemble."
+excerpt: "Parallel-action needle nose pliers capable of gripping and picking up through-hole resistors. The model is multi-material printed using two different filaments: PLA and TPU (90A)."
 
 header:
-  image: /assets/img/syringepumpreallifeassembly.gif
-  teaser: /assets/img/syringepumpreallifeassembly.gif
+  image: /assets/img/picking_up_resistor.gif
+  teaser: /assets/img/picking_up_resistor.gif
 gallery:
   - url: /assets/img/syringepumpcadmodel.jpg
     image_path: assets/img/syringepumpcadmodel.jpg
@@ -15,63 +14,40 @@ gallery:
     alt: "placeholder image 2"
 ---
 
-This design project used modern techniques of filament 3D printing and microcontroller programming to design a functional syringe pump. The project supports 20 mL and 10 mL syringes. Two syringe pump diameters were used to calculate maximum flow rates. A 14.3 mm diameter syringe’s maximum flow rate is 12.044 mL/min. A 19.2 mm diameter syringe would have a maximum flow rate of 21.713 mL/min. 
+The goal of this project was to design and print needle nose pliers capable of gripping and picking up through-hole resistors. The model is multi-material printed using two different filaments: PLA and TPU (90A). The TPU part functions as a “spring” to push the PLA parts apart from each other in resting position. Compression force is used to bring the plier’s jaws together. 
+The model was originally designed to be print-in-place, meaning that they should not require any assembly post-print. With the elimination of screws, pins, fasteners, adhesives, and other assembly hardware, print-in-place models save a significant amount of time. Chains, which are usually linked one by one, can be printed quickly all at once (example [here](https://www.thingiverse.com/thing:2916907)). Another example would be a ball joint (example [here](https://www.thingiverse.com/thing:454814) which would otherwise be much more difficult to assemble.
 
-## Parts List
-#### Off-the-shelf
+## About the Design Process 
+#### PLA Parts 
+I aimed to design the pliers as small as possible for easiest transportability as well as fastest printing time. Larger models were also on the less precise end when I tested previously printed pliers. A tolerance of 0.3 mm was used throughout the entire final design.     
+The specific type of pliers I chose were parallel action pliers, which constrain the movement of the plier’s jaws to remain in parallel. Most other pliers have only a single point of contact while parallel action pliers ensure that the entire face of the jaw comes in contact upon closure. 
+In the first design of the pliers (white model) the three fasteners snapped when I tried to remove the supports. I increased the thickness of all the parts as well as the clearances for the second iteration (black model). The same issue occurred again. Given time constraints, I ultimately resorted to using M2 x 12 screws with nuts to hold the pieces together, deeming the pliers no longer a print-in-place model. The torsion applied by the rotations of the handles onto the hinges was too great for a 2 mm diameter PLA piece, especially since they were printed along the X-Y plane.  
 
-| Name          | Quantity      | 
-| ------------- |:-------------:| 
-| Computer with USB port | 1 | 
-| Power supply | 1 | 
-| Arduino | 1 |   
-| Stepper motor | 1 |    
-| Lead screw | 1 |
-| Screws for housing | 4 |
-| Latching button | 1 |
-| Limit switch | 1 |
-| LED | 1 |
-| Breadboard | 1 |
-| Jumper wires | 1 |
-| 20 mL or 10 mL syringe | 1 |
-| V-slot 20 x 40 x 350 mm | 1 |
+#### TPU Parts 
+In terms of materials, 90A was selected over 95A for more flexibility. To test different resistances of the spring component, three infill percentages were used: 35%, 30%, and 25% (from left to right). This was done for all three iterations of the spring components. 
 
-Syringe Specifications:
-* Plunger base diameters: 12 mm - 20.75 mm 
-*	Flange diameters: 17 mm - 38.5 mm
-*	End of plunger diameter: < 17 mm 
-*	Barrel diameter: 21.50 mm 
+The first iteration of the spring component was meant to connect to the other ends of the jaw parts, shown below. The two protruding bits would create a dove-tail shaped connection between the two jaw segments. Given the small size of the pliers, however, the connection points (originally designed to be 1.5 mm wide) failed to print to the resolution required to actually create a rigid joint. When I used my hands to squeeze down on the spring component, it also flexed significantly out of plane, and it could be seen that this flexion could not be accommodated by the plier design. Much of this flex appeared to be due to the large height compared to width of the component. 
 
+I then decided to use a design that was wider than it was tall, which worked much better. I also changed the connection mechanism to lay within the insides of the handles. The dovetail would slide into a cut made in either of the handles from the end. This design was much more successful and allowed for larger cuts to be made as the handles are the thickest part of my design. 
 
-#### 3D printed parts 
+After the second iteration, I quickly realized that the component was not tall enough to push the jaws away from each other. I then made the ovals taller and wider, which pushed the jaws apart better.  
 
-| Name          | Quantity      | 
-| ------------- |:-------------:| 
-| Component housing box and lid | 1 |
-| End support | 2 |
-| Motor mounting plate | 1 |
-| Carriage | 1 |
+## Specifications 
+#### Jaw measurements 
+The jaw is approximately 15 mm long, and can open up to 6.5 mm. The entire plier is roughly 130 mm long when resting. 
 
-## Click [here](/_pages/SyringePumpCode.txt) for Arduino code 
+#### Print Settings
+| Setting          | PLA      |TPU      | 
+| ------------- |:-------------:|:-------------:|
+| Print width (mm) | 0.4 | 0.6 |
+| Bed temperature (°C) | 65 | 60 |
+| Print temperature (°C) | 215 | 240 |
+| Bottom and top solid layers | 3 | 0 |
+| Infill (%) | 20 | 25 |
+| Infill pattern | Gyroid | Grid |
 
 ## CAD Model 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811705aeb8185a93df8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-
-## Operating Instructions: 
-1.	Work on a clean, flat surface away from liquids.
-2.	Fill the appropriately sized syringe with the desired amount of liquid
-3.	Gather the syringe pump, computer, Arduino cable, and power supply. Check that all device connections are secure.
-4.	Rotate the lead screw to position the carriage for the syringe.
-5.	Place the loaded syringe into the mounts, with the tip slightly overhanging the front mount.
-6.	Connect the Arduino to the computer and open the Arduino file.
-7.	Enter the syringe diameter (mm) under “syringeDiameter” and the desired flow rate (mL/min) under “flowRate.
-8.	Upload the code and confirm the upload is successful.
-9.	Disconnect the Arduino from the computer and plug the power supply into an outlet. The LED should turn on.
-10.	Press the red button to start the motor. The LED should turn green as the carriage presses the syringe.
-11.	Press the red button again to pause. A yellow LED indicates the device is paused.
-12.	When the carriage reaches the limit switch, the device will stop and the LED will turn red.
-13.	To run another syringe, unplug the power, remove the syringe, reset the carriage using the lead screw, and repeat the process.
-14.	When finished, unplug all cables and store the device in a safe, dry location.
 
 
 {% include gallery caption="Rendering of the CAD model and the wiring diagram." %}
