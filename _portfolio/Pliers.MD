@@ -42,7 +42,7 @@ The model was originally designed to be print-in-place, meaning that they should
 #### PLA Parts 
 
 <div style="text-align: center;">
-  <img src="/assets/img/pliers_1_and_2" alt="Plier PLA part iterations" width="60%">
+  <img src="/assets/img/pliers_1_and_2" alt="Plier PLA part iterations images" width="60%">
 </div>
 I aimed to design the pliers as small as possible for transportability and fast printing time. Larger models were also on the less precise end when I tested previously printed pliers. A tolerance of 0.3 mm was used throughout the entire final design.     
 The specific type of pliers I chose were parallel action pliers, which constrain the movement of the plier’s jaws to remain in parallel. Most other pliers have only a single point of contact while parallel action pliers ensure that the entire face of the jaw comes in contact upon closure. 
@@ -56,13 +56,12 @@ The first iteration of the spring component was meant to connect to the other en
 I then decided to use a design that was wider than it was tall, which worked much better. I also changed the connection mechanism to lay within the insides of the handles. The dovetail would slide into a cut made in either of the handles from the end. This design was much more successful and allowed for larger cuts to be made as the handles are the thickest part of my design. It is shown below. 
 
 <div style="text-align: center;">
-  <img src="/assets/img/pliers_1_and_2" alt="Plier PLA part iterations" width="60%">
+  <img src="/assets/img/dove_tail" alt="TPU to PLA connection image" width="60%">
 </div>
 
 After the second iteration, I quickly realized that the component was not tall enough to push the jaws away from each other. I then made the ovals taller and wider, which pushed the jaws apart better. 
 
 {% include gallery id="gallery1" layout="third" %}
-
 **First, second, and third iterations of spring component (left to right)**
 
 ## Specifications 
@@ -83,4 +82,5 @@ The jaw is approximately 15 mm long, and can open up to 6.5 mm. The entire plier
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811705aeb8185a93df8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 
-{% include gallery2 caption="Demonstrations of plier." %}
+{% include galleryd id="gallery2" layout="third" %}
+**Demonstration of plier from different angles" 
