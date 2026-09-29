@@ -82,5 +82,5 @@ The jaw is approximately 15 mm long, and can open up to 6.5 mm. The entire plier
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811705aeb8185a93df8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 
-{% include galleryd id="gallery2" layout="third" %}
+{% include gallery id="gallery2" layout="third" %}
 **Demonstration of plier from different angles" 
