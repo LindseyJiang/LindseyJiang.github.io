@@ -3,7 +3,7 @@ title: "Multimaterial Pliers"
 excerpt: "Multi-material parallel-action needle nose pliers capable of gripping and picking up through-hole resistors."
 header:
   image: /assets/img/picking_up_resistor.gif
-  teaser: /assets/img/finalplier.png
+  teaser: /assets/img/finalplier.jpeg
 
 ---
 
